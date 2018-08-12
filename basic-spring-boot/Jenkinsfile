@@ -3,7 +3,8 @@ openshift.withCluster() {
   env.POM_FILE = env.BUILD_CONTEXT_DIR ? "${env.BUILD_CONTEXT_DIR}/pom.xml" : "pom.xml"
   env.APP_NAME = "${env.JOB_NAME}".replaceAll(/-?pipeline-?/, '').replaceAll(/-?${env.NAMESPACE}-?/, '').replaceAll("/", '')
   echo "Starting Pipeline for ${APP_NAME}..."
-  def projectBase = "${env.NAMESPACE}".replaceAll(/-build/, '')
+  //def projectBase = "${env.NAMESPACE}".replaceAll(/-build/, '')
+  def projectBase = "basic-spring-boot"
  // env.STAGE0 = "${projectBase}-build"
   env.STAGE0 = "cicd"
   env.STAGE1 = "${projectBase}-dev"
