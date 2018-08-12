@@ -58,7 +58,7 @@ parameters:
 - description: Source code repo for demo app
   name: APPLICATION_SOURCE_REPO
   required: true
-  value: https://github.com/wohshon/spring-rest.git
+  value: https://github.com/redhat-cop/spring-rest.git
 - description: Path within Git project pointing to the pipeline run script
   name: PIPELINE_SCRIPT
   value: Jenkinsfile
