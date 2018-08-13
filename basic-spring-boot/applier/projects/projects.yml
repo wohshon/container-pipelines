@@ -10,18 +10,18 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: basic-spring-boot-dev
+    name: tasks-dev
     creationTimestam: null
-  displayName: Spring Rest App - Dev
+  displayName: Openshift Tasks - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: basic-spring-boot-stage
+    name: tasks-stage
     creationTimestam: null
-  displayName: Spring Rest App - Stage
+  displayName: Openshift Tasks - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: basic-spring-boot-prod
+    name: tasks-prod
     creationTimestam: null
-  displayName: Spring Rest App - Prod
+  displayName: Openshift Tasks - Prod
