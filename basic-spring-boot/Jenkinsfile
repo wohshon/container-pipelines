@@ -6,7 +6,7 @@ openshift.withCluster() {
   //def projectBase = "${env.NAMESPACE}".replaceAll(/-build/, '')
   def projectBase = "tasks"
  // env.STAGE0 = "${projectBase}-build"
-  env.STAGE0 = "cicd"
+  env.STAGE0 = "${env.PROJECT_NAME}"
   env.STAGE1 = "${projectBase}-dev"
   env.STAGE2 = "${projectBase}-stage"
   env.STAGE3 = "${projectBase}-prod"
